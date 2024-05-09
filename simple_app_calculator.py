@@ -41,10 +41,27 @@ def ask_to_continue():
     else:
         messagebox.showinfo("Thanks for Trying the Program", "Thank You!")
         app.after(4000, app.destroy)
+        
 #Create result box (entry)
 main_entry = customtkinter.CTkEntry(app, width=280, height=50, fg_color= "#66CDAA", text_color="white",)
 main_entry.place(x=10, y=10)
+
 #Create buttons for numbers and operators
+buttons = [
+    '1', '2', '3',
+    '4', '5', '6',
+    '7', '8', '9',
+    '0', '.', 
+    '+', '-', 'X', '/'
+]
+
+x_values = [15, 85, 155, 15, 85, 155, 15, 85, 155, 15, 85, 225, 225, 225, 225]
+y_values = [170, 170, 170, 125, 125, 125, 80, 80, 80, 215, 215, 80, 125, 170, 215]
+
+for i, button_text in enumerate(buttons):
+    button = customtkinter.CTkButton(app, text=button_text, command=lambda text=button_text: button_click(text), width=60)
+    button.place(x=x_values[i], y=y_values[i])
+
 #Create calculate button
 #Create clear button
 #Start the GUI event loop
