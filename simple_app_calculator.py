@@ -42,6 +42,8 @@ def ask_to_continue():
         messagebox.showinfo("Thanks for Trying the Program", "Thank You!")
         app.after(4000, app.destroy)
 #Create result box (entry)
+main_entry = customtkinter.CTkEntry(app, width=280, height=50, fg_color= "#66CDAA", text_color="white",)
+main_entry.place(x=10, y=10)
 #Create buttons for numbers and operators
 #Create calculate button
 #Create clear button
