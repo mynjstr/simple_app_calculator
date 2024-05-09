@@ -72,3 +72,4 @@ clear_button = customtkinter.CTkButton(app, text="C", command=ask_to_continue, w
 clear_button.place(x=155, y=215)
 
 #Start the GUI event loop
+app.mainloop()
