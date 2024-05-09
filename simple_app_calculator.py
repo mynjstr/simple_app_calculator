@@ -25,7 +25,8 @@ def calculate():
     try:
         equation = main_entry.get()
         user_equation = equation.replace("X", "*")
-        
+        if any(character.isalpha() for character in user_equation):
+            raise ValueError
         result = eval(user_equation)
         clear()
         main_entry.insert(0, result)
