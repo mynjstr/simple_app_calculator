@@ -12,6 +12,7 @@ customtkinter.set_default_color_theme("green")
 app = customtkinter.CTk()
 app.title("Simple Calculator App")
 app.geometry("300x300")
+app.resizable(False)
 
 #Define functions for button clicks, clearing the entry, calculating the result, and asking to continue
 def button_click(number):
