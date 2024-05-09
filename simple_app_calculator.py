@@ -24,8 +24,9 @@ def clear():
 def calculate():
     try:
         equation = main_entry.get()
-        new_equation = equation.replace("X", "*")
-        result = eval(new_equation)
+        user_equation = equation.replace("X", "*")
+        
+        result = eval(user_equation)
         clear()
         main_entry.insert(0, result)
     except ZeroDivisionError:
