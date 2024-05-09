@@ -65,5 +65,9 @@ for i, button_text in enumerate(buttons):
 #Create calculate button
 calculate_button = customtkinter.CTkButton(app, command=calculate, text="=", width=270)
 calculate_button.place(x=15, y=255)
+
 #Create clear button
+clear_button = customtkinter.CTkButton(app, text="C", command=ask_to_continue, width=60)
+clear_button.place(x=155, y=215)
+
 #Start the GUI event loop
