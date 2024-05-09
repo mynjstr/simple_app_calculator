@@ -1,7 +1,8 @@
-# Define a addition function for two numbers
-# Define a subtraction function for two numbers
-# Define a multiplication function for two numbers
-# Define a divison function for two numbers
-# Construct a dictionary for operations
-# Define a function to execute the calculator
-# Try to execute the operation
+#Import necessary tkinter libraries
+#Set GUI theme and window size
+#Define functions for button clicks, clearing the entry, calculating the result, and asking to continue
+#Create result box (entry)
+#Create buttons for numbers and operators
+#Create calculate button
+#Create clear button
+#Start the GUI event loop
