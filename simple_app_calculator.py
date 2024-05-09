@@ -12,7 +12,7 @@ customtkinter.set_default_color_theme("green")
 app = customtkinter.CTk()
 app.title("Simple Calculator App")
 app.geometry("300x300")
-app.resizable(False)
+app.resizable(False, False)
 
 #Define functions for button clicks, clearing the entry, calculating the result, and asking to continue
 def button_click(number):
@@ -40,7 +40,7 @@ def ask_to_continue():
     if response:
         clear()
     else:
-        messagebox.showinfo("Thanks for Trying the Program", "Thank You!")
+        messagebox.showinfo("Thanks for Trying ", "Thank You!")
         app.after(4000, app.destroy)
 
 #Create result box (entry)
